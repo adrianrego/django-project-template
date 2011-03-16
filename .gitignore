@@ -1,7 +1,9 @@
 *~
 *.pyc
 docs/_build/*
-uploads
+uploads/*
 myproject/conf/local/*.py
 dev.db
 myproject.egg-info
+
+!uploads/README

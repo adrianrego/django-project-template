@@ -2,7 +2,7 @@
 *.pyc
 docs/_build/*
 uploads/*
-myproject/conf/local/*.py
+myproject/conf/local/settings.py
 dev.db
 myproject.egg-info
 

@@ -13,3 +13,5 @@ DATABASES = {
     }
 }
 
+ROOT_URLCONF = 'myproject.conf.local.urls'
+

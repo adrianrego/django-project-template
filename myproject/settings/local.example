@@ -1,6 +1,5 @@
-# Rename to settings.py before starting project
-
-from myproject.settings import *
+from __future__ import absolute_import
+from .base import *
 
 DATABASES = {
     'default': {
@@ -12,6 +11,3 @@ DATABASES = {
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
-
-ROOT_URLCONF = 'myproject.conf.local.urls'
-

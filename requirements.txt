@@ -1,11 +1,12 @@
-django==1.3
+Django>=1.3,<1.4
 django-extensions
 docutils
 fabric==1.0
 PIL
 psycopg2
 Sphinx
+Unipath
 
 -e git+git://github.com/dcramer/django-debug-toolbar.git#egg=django-debug-toolbar
--e hg+http://bitbucket.org/andrewgodwin/south/#egg=south
+-e hg+https://bitbucket.org/andrewgodwin/south/#egg=south
 -e git+git://github.com/adrianrego/django-startproject.git#egg=django-startproject

@@ -5,13 +5,20 @@ Installation
 Pre-Requisites
 ===============
 
-* `setuptools <http://pypi.python.org/pypi/setuptools>`_
+* `distribute <http://pypi.python.org/pypi/distribute>`_
+* `pip <http://pypi.python.org/pypi/pip>`_
 * `virtualenv <http://pypi.python.org/pypi/virtualenv>`_
+* `rvm <http://beginrescueend.com/>`_
+  * `ruby 1.9.2-p290`
 
-To install all of these system dependencies on a Debian-based system, run::
+To install all of these system dependencies::
 
-	sudo apt-get install python-setuptools
-	sudo easy_install virtualenv
+  curl -O http://python-distribute.org/distribute_setup.py
+  python distribute_setup.py
+  easy_install pip
+  pip install virtualenv
+  bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
+  rvm install ruby-1.9.2-p290
 
 
 Creating the Virtual Environment
@@ -29,8 +36,8 @@ Installing the Project
 
 Install the requirements and the project source::
 
-	cd path/to/your/myproject/repository
-    pip install -r requirements.pip
+	cd path/to/your/myproject/
+    pip install -r requirements.txt
     pip install -e .
 
 
@@ -48,9 +55,8 @@ Building Documentation
 ======================
 
 Documentation is available in ``docs`` and can be built into a number of 
-formats using `Sphinx <http://pypi.python.org/pypi/Sphinx>`_. To get started::
+formats using `Sphinx <http://pypi.python.org/pypi/Sphinx>`_. To get started:
 
-    pip install Sphinx
     cd docs
     make html
 

@@ -1,0 +1,43 @@
+/*
+ * Imports for compass & 960 grid
+ * -- normalize
+ * -- compass/utilties/general
+ * -- compass/typography
+ * -- compass/css3
+ * -- 960/grid.sass
+============================================================================ */
+@import "partials/base";
+
+/*
+ * Custom imports
+============================================================================ */
+
+
+/*
+ * 960 Defaults
+============================================================================ */
+
+// The following generates the default grids provided by the css version of 960.gs
+.container_12 {
+  @include grid-system(12); }
+
+.container_16 {
+  @include grid-system(16); }
+
+// But most compass users prefer to construct semantic layouts like so (two column layout with header and footer):
+
+$ninesixty-columns: 24;
+
+.two-column {
+  @include grid-container;
+  #header, #footer {
+    @include grid(24); }
+  #sidebar {
+    @include grid(8); }
+  #main-content {
+    @include grid(16); } }
+
+/*
+ * Print & Media Queries
+============================================================================ */ 
+@import "partials/print";

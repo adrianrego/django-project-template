@@ -1,0 +1,9 @@
+rvm --create use 1.9.2-p290@myproject > /dev/null
+
+if ! command -v bundle > /dev/null; then
+  gem install bundler
+fi
+
+if ! command -v vagrant > /dev/null; then
+  bundle install
+fi

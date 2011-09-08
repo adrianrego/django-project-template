@@ -7,7 +7,6 @@ Contents:
    :maxdepth: 2
    
    install
-   deployment
 
 Indices and tables
 ==================

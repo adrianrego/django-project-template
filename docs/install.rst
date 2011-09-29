@@ -8,8 +8,7 @@ Pre-Requisites
 * `distribute <http://pypi.python.org/pypi/distribute>`_
 * `pip <http://pypi.python.org/pypi/pip>`_
 * `virtualenv <http://pypi.python.org/pypi/virtualenv>`_
-* `rvm <http://beginrescueend.com/>`_
-  * `ruby 1.9.2-p290`
+* `rvm <http://beginrescueend.com/>`_ (ruby 1.9.2-p290)
 
 To install all of these system dependencies::
 
@@ -36,7 +35,7 @@ Installing the Project
 
 Install the requirements and the project source::
 
-	cd path/to/your/myproject/
+    cd path/to/your/myproject/
     pip install -r requirements.txt
     pip install -e .
 
@@ -47,7 +46,7 @@ Configuring a Local Environment
 If you're just checking the project out locally, you can copy some example
 configuration files to get started quickly::
 
-    cp myproject/conf/local/example/* myproject/conf/local
+    mv myproject/settings/local.example myproject/settings/local.py
     manage.py syncdb --migrate
 
 

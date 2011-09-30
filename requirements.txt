@@ -1,6 +1,7 @@
 docutils
 gunicorn
 fabric
+littlechef
 Sphinx
 
 -e git+git://github.com/django/django.git#egg=django

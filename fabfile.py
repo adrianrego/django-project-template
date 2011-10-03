@@ -44,8 +44,7 @@ def bootstrap():
 
     # Install Ruby and Chef
     rvm_install('ruby-1.9.2-p290', True)
-    run("gem install chef --no-ri --no-rdoc")
-    run("gem install ohai --no-ri --no-rdoc")
+    run("gem install chef ohai --no-ri --no-rdoc")
 
 
 def rvm_install(ruby, default=False):
